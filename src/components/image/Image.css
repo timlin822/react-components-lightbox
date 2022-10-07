@@ -1,0 +1,16 @@
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.image-card{
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+}
+.image-card img{
+    transition: transform 0.5s ease;
+}
+.image-card img:hover{
+    transform: scale(1.1);
+}

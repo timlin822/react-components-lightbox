@@ -1,0 +1,60 @@
+.bg-overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s ease,opacity 0.5s ease;
+}
+.bg-overlay-open{
+    visibility: visible;
+    opacity: 1;
+}
+.lightbox{
+    width: 50%;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+}
+.lightbox-open{
+    transform: scale(1);
+}
+.lightbox-close-button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #003366;
+    background-color: #fcfcfc;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+.lightbox-button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: #003366;
+    background-color: #fcfcfc;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.lightbox-button-prev{
+    left: 40px;
+}
+.lightbox-button-next{
+    right: 40px;
+}
